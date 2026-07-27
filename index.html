@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estefanía Basantes · Consultora Organizacional</title>
+  <meta name="description" content="Tarjeta de presentación digital de Estefanía Basantes, Mg. — PsicOrg Consulting. Talento humano, desarrollo organizacional y bienestar laboral.">
+  <meta property="og:title" content="Estefanía Basantes · Consultora Organizacional">
+  <meta property="og:description" content="PsicOrg Consulting — Las organizaciones crecen cuando las personas se desarrollan.">
+  <style>
+    :root {
+      --navy: #16243d;
+      --navy-2: #1e3054;
+      --navy-3: #24395f;
+      --gold: #e0a13f;
+      --gold-light: #f0c27a;
+      --text: #f5f2ec;
+      --muted: #a8b2c4;
+      --line: rgba(255, 255, 255, 0.1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: radial-gradient(1100px 600px at 50% -10%, #2c4470 0%, var(--navy) 55%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px 48px;
+    }
+    .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .card { width: 100%; max-width: 430px; }
+    /* ===== Header ===== */
+    .hero {
+      background: linear-gradient(150deg, var(--navy-2) 0%, var(--navy-3) 60%, #2b426d 100%);
+      border: 1px solid var(--line);
+      border-bottom: 3px solid var(--gold);
+      border-radius: 22px 22px 0 0;
+      padding: 30px 24px 58px;
+      text-align: center;
+    }
+    .brand {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-transform: uppercase;
+    }
+    .brand-name {
+      font-size: 30px;
+      color: var(--text);
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+    }
+    .brand-name .dot { color: var(--gold); }
+    .avatar {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      background: var(--navy-2);
+      border: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--gold);
+      margin: -56px auto 14px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    /* ===== Body ===== */
+    .body {
+      background: var(--navy-2);
+      border: 1px solid var(--line);
+      border-top: none;
+      border-radius: 0 0 22px 22px;
+      padding: 0 22px 26px;
+    }
+    h1 { font-size: 27px; text-align: center; letter-spacing: 0.3px; font-weight: 600; }
+    .role {
+      text-align: center;
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 5px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    .quote {
+      text-align: center;
+      color: var(--muted);
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 14px auto 6px;
+      max-width: 320px;
+    }
+    .quote::before { content: '“'; color: var(--gold); font-size: 22px; }
+    .quote::after { content: '”'; color: var(--gold); font-size: 22px; }
+    .bio {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin: 10px auto 20px;
+      max-width: 350px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    /* ===== Buttons ===== */
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 10px;
+      border-radius: 12px;
+      background: var(--navy-3);
+      border: 1px solid var(--line);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .btn:hover { transform: translateY(-2px); border-color: var(--gold); }
+    .btn svg { width: 18px; height: 18px; fill: var(--gold); flex-shrink: 0; }
+    .btn.primary {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #c8892a, var(--gold));
+      border: none;
+      color: #1b2438;
+      font-size: 15px;
+    }
+    .btn.primary svg { fill: #1b2438; }
+    /* ===== Areas ===== */
+    .section-title {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin: 24px 0 12px;
+    }
+    .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    .chip {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--gold-light);
+      background: rgba(224, 161, 63, 0.1);
+      border: 1px solid rgba(224, 161, 63, 0.4);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+    /* ===== Location ===== */
+    .location {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13.5px;
+      margin-top: 18px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    .location strong { color: var(--gold-light); font-weight: 600; }
+    /* ===== QR ===== */
+    .qr-wrap { text-align: center; margin-top: 22px; }
+    .qr-box { display: inline-block; background: #ffffff; padding: 12px; border-radius: 14px; }
+    .qr-box svg, .qr-box img { display: block; width: 150px; height: 150px; }
+    .qr-hint { color: var(--muted); font-size: 12.5px; margin-top: 10px; font-family: 'Segoe UI', system-ui, sans-serif; }
+    /* ===== Footer ===== */
+    .footer {
+      text-align: center;
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    .footer a { color: var(--gold); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header class="hero">
+      <div class="brand">Consultora Organizacional</div>
+      <div class="brand-name">PsicOrg<span class="dot">.</span></div>
+    </header>
+    <div class="body">
+      <div class="avatar"><img src="foto.jpg" alt="Estefanía Basantes" onerror="this.parentElement.textContent='EB'"></div>
+      <h1>Estefanía Basantes, Mg.</h1>
+      <p class="role">Psicóloga Organizacional · PsicOrg Consulting</p>
+      <p class="quote">Las organizaciones crecen cuando las personas se desarrollan</p>
+      <p class="bio">
+        Acompaño a empresas públicas y privadas en estrategias de talento humano,
+        desarrollo organizacional y bienestar laboral: equipos comprometidos,
+        líderes inspiradores y culturas que generan resultados.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="estefania-basantes.vcf" download>
+          <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 4h14v-2H5v2z"/></svg>
+          Guardar contacto
+        </a>
+        <a class="btn" href="https://wa.me/593995519286?text=Hola%20Estefan%C3%ADa,%20vi%20tu%20tarjeta%20digital" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2zm5.83 14.16c-.25.7-1.45 1.33-2.03 1.42-.52.08-1.18.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5.01-4.36-5.16-4.56-.15-.2-1.23-1.64-1.23-3.13 0-1.49.78-2.22 1.06-2.52.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.68.52.25.6.85 2.08.93 2.23.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.32.4-.45.53-.15.15-.31.31-.13.61.18.3.79 1.3 1.7 2.11 1.17 1.04 2.15 1.36 2.46 1.52.3.15.48.13.66-.08.18-.2.76-.89.96-1.19.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.3.15.5.23.58.35.07.13.07.73-.18 1.43z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn" href="tel:+593995519286">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+          Llamar
+        </a>
+        <a class="btn" href="mailto:estefy199215@hotmail.com">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Correo
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="section-title">Áreas de especialización</div>
+      <div class="chips">
+        <span class="chip">Talento Humano</span>
+        <span class="chip">Desarrollo Organizacional</span>
+        <span class="chip">Liderazgo</span>
+        <span class="chip">Bienestar Laboral</span>
+        <span class="chip">Capacitación Empresarial</span>
+        <span class="chip">Riesgos Psicosociales</span>
+      </div>
+
+      <p class="location">📍 <strong>Barcelona y Madrid</strong></p>
+
+      <div class="qr-wrap">
+        <div class="section-title">Comparte esta tarjeta</div>
+        <div class="qr-box" id="qr"></div>
+        <p class="qr-hint">Escanea o comparte el enlace de esta página</p>
+      </div>
+
+      <div class="footer">
+        Tarjeta digital creada por <a href="https://www.evowebec.com" target="_blank" rel="noopener">EvoWeb</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script>
+    (function () {
+      var box = document.getElementById('qr');
+      try {
+        var qr = qrcode(0, 'M');
+        qr.addData(window.location.href);
+        qr.make();
+        box.innerHTML = qr.createSvgTag({ scalable: true, margin: 0 });
+      } catch (e) {
+        box.innerHTML = '<p style="color:#111;font-size:12px;max-width:150px">QR disponible al publicar la tarjeta en internet</p>';
+      }
+    })();
+  </script>
+</body>
+</html>
